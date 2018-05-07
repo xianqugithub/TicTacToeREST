@@ -1,0 +1,7 @@
+all: docker_run
+
+docker_make:
+	docker build -t server-ubuntu ./server
+
+docker_run: docker_make
+	docker run -it server-ubuntu

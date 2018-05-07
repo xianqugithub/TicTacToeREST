@@ -1,0 +1,5 @@
+all: run
+
+run:
+	javac -cp ./libs ./client.java
+	
